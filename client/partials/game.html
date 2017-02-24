@@ -1,0 +1,37 @@
+<p>Hi {{sessionuser}}!</p>
+<p>Choose an answer for each of the questions and submit the test once done.</p>
+<p>Good luck!</p>
+<div class="questionbox" >
+  1. {{questions[0].text}}
+  <hr>
+  <input name="{{questions[0].text}}" type="radio" value="questions[0].correct" ng-click="radioSelected(true, 0)">{{questions[0].correct}}</input>
+  <br>
+  <input name="{{questions[0].text}}" type="radio" value="questions[0].fakeOne" ng-click="radioSelected(false, 0)">{{questions[0].fakeOne}}</input>
+  <br>
+  <input name="{{questions[0].text}}" type="radio" value="questions[0].fakeTwo" ng-click="radioSelected(false, 0)">{{questions[0].fakeTwo}}</input>
+</div>
+<br>
+<div class="questionbox" >
+  2. {{questions[1].text}}
+  <hr>
+  <input name="{{questions[1].text}}" type="radio" value="question.correct" ng-click="radioSelected(true, 1)">{{questions[1].correct}}</input>
+  <br>
+  <input name="{{questions[1].text}}" type="radio" value="question.fakeOne" ng-click="radioSelected(false, 1)">{{questions[1].fakeOne}}</input>
+  <br>
+  <input name="{{questions[1].text}}" type="radio" value="question.fakeTwo" ng-click="radioSelected(false, 1)">{{questions[1].fakeTwo}}</input>
+</div>
+<br>
+<div class="questionbox" >
+  3. {{questions[2].text}}
+  <hr>
+  <input name="{{questions[2].text}}" type="radio" value="question.correct" ng-click="radioSelected(true, 2)">{{questions[2].correct}}</input>
+  <br>
+  <input name="{{questions[2].text}}" type="radio" value="question.fakeOne" ng-click="radioSelected(false, 2)">{{questions[2].fakeOne}}</input>
+  <br>
+  <input name="{{questions[2].text}}" type="radio" value="question.fakeTwo" ng-click="radioSelected(false, 2)">{{questions[2].fakeTwo}}</input>
+</div>
+<button ng-click="cancel()">Cancel</button>
+<button ng-click="submit()">Submit</button>
+<br>
+<hr>
+<div class="redbox" ng-repeat="message in messages" ng-bind="message"></div>

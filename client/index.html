@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>Belt Review</title>
+    <link rel="stylesheet" href="assets/s.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script>
+          $(document).ready(function() {
+        $('select').material_select();
+      });
+    </script> -->
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="assets/app.js"></script>
+
+    <script src="assets/factories/userfactory.js"></script>
+    <script src="assets/factories/gamefactory.js"></script>
+    <script src="assets/factories/questionfactory.js"></script>
+
+    <script src="assets/controllers/homecontroller.js"></script>
+    <script src="assets/controllers/newcontroller.js"></script>
+    <script src="assets/controllers/gamecontroller.js"></script>
+    <!-- <script src="assets/controllers/indexcontroller.js"></script> -->
+
+  </head>
+  <body>
+    <header>
+      <div class="headerleft">
+        <a href="#!/">Home</a> | <a href="#!/new_question">Add a Question</a>
+      </div>
+      <div class="headerright">
+        <button href="#!/logout">Log Out</button>
+      </div>
+    </header>
+    <hr>
+    <div ng-view= "">
+    </div>
+  </body>
+</html>

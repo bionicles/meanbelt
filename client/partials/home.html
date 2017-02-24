@@ -1,0 +1,24 @@
+<p>hey {{sessionuser}}, time for trivia!</p>
+<div class="green" ng-repeat="message in messages" ng-bind="message"></div>
+<div class="playbox">
+  <button ng-click="play()">Play!</button>
+  <p>Click the button above to start the trivia game.</p>
+</div>
+<hr>
+<table>
+  <tr>
+    <th>Name <hr> <input placeholder="search names..." type="text" ng-model="namesearch">
+</th>
+    <th>Score <hr>   <input placeholder="search scores..." type="text" ng-model="scoresearch">
+</th>
+    <th>Percentage <hr>   <input placeholder="search percentages..." type="text" ng-model="percentagesearch">
+</th>
+  </tr>
+  <tbody>
+    <tr ng-repeat="game in games | orderBy:'-score' | filter:{score:scoresearch, name:namesearch, percentage:percentagesearch}">
+      <td ng-bind="game.name"></td>
+      <td >{{game.score}}/3</td>
+      <td ng-bind="game.percentage"></td>
+    </tr>
+  </tbody>
+</table>

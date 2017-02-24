@@ -1,0 +1,136 @@
+*{
+  text-align: center !important;
+}
+div.headerright{
+  display: inline-block;
+  text-align: right;
+}
+
+div.green{
+  background-color: green;
+  border: 3px solid black;
+}
+
+div.headerleft{
+  display: inline-block;
+  text-align: right;
+}
+
+div.errors {
+  color: red;
+}
+
+.playbox{
+  background-color: grey;
+}
+div.questionbox{
+  border: 3px solid black;
+  padding: 10px;
+}
+div.search{
+  text-align: right;
+}
+div.redbox{
+  background-color: red;
+  border: 3px solid black;
+  color: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;}
+tr:nth-child(even) { background-color: #dddddd;}
+
+.box{
+ border: 1px solid silver;
+}
+
+
+div.playbox{
+  border: 3px solid black;
+  padding: 10px;
+}
+
+div.playbox button{
+  width: 20%;
+}
+
+div.left{
+  width: 20%;
+  position: relative;
+  left: 0;
+}
+
+div.right{
+  width: 10%;
+  position: relative;
+  right: 0;
+}
+
+button{
+ background-color: #0472e0 ;
+ color: white;
+}
+
+.cancel{
+  background-color: #559ee8 ;
+  width: 42%;
+}
+input.submit{
+  background-color: #559ee8 ;
+  width: 42%;
+}
+a{
+ font-size: 1.2em;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+ color:          red !important;
+ opacity:        1 !important;
+}
+.inline-block{
+ display:        inline-block;
+ }
+.wrapper{
+ height:         100%;
+ width:          100%;
+ position:       absolute;
+ }
+form{
+ vertical-align: top;
+ }
+
+form input{
+   width: 100%;
+   clear: both;
+ }
+.addbox{
+ position:       fixed;
+ left:           0 !important;
+ width:          42%;
+ margin:         10px
+}
+.listbox{
+ position:       fixed;
+ right:          0 !important;
+ width:          42%;
+ margin:         10px;
+}
+th{
+ text-align:     center !important;
+}
+td{
+ text-align:     center !important;
+}
+.ng-binding{
+ text-align:     center !important;
+}
+textarea{
+ overflow:       scroll;
+}
+h1{
+ color:          #004D43 ;
+}*/
